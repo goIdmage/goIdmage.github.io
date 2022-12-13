@@ -1,3 +1,3 @@
-## fort a22hole.
+## project discontinued on github.
 
-project discontinued on github. ![resumed on neocities.](https://solluxcaptor.neocities.org/)
+resumed![ on neocities.](https://solluxcaptor.neocities.org/)
