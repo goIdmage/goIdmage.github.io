@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta name="description" content="thoughts dump.">
+   <link rel="icon" type="image/x-icon" href="img/trollian.ico">
+
+<!-- scripts -->
+
+   <link rel="stylesheet" href="https://unpkg.com/98.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+   <script src="//code.jquery.com/jquery-1.12.4.js">
+   </script>
+
+   <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js">
+   </script>
+
+   <title> hii. </title>
+
+   <script>var documentTitle = document.title + " ";
+
+   (function titleMarquee() {
+    document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0,1);
+    setTimeout(titleMarquee, 100);
+} );
+   </script>
+
+   <script>
+   function myFunction() {
+     var dots = document.getElementById("dots");
+     var moreText = document.getElementById("more");
+     var btnText = document.getElementById("myBtn");
+
+     if (dots.style.display === "none") {
+       dots.style.display = "inline";
+       btnText.innerHTML = "read more"; 
+       moreText.style.display = "none";
+     } else {
+       dots.style.display = "none";
+       btnText.innerHTML = "read less"; 
+       moreText.style.display = "inline";
+  }
+}
+   </script>
+
+<!-- the fun part of this document -->
+
+
+<style>
+
+  body {
+   font-family: "courier-std", courier, monospace;
+   background-image: url('img/stemcluster.png');
+   background-size: repeat;
+   background-attachment: fixed;
+  
+}
+
+hover {
+    color: #757500;
+    text-decoration: underline;
+}
+
+hover:hover {
+   font-style: italic;
+
+}
+
+a {
+   font-size: 12px;
+   text-decoration: underline;
+}
+
+a:hover {
+   font-style: italic;
+
+}
+
+@font-face {
+				font-family: "arial11";
+				src: url('https://dl.dropboxusercontent.com/s/eijyurcmguopkr2/pixearg_.ttf?dl=0');
+			}
+
+::selection { 
+   background-color: #d8d8d8;
+
+}
+
+
+p {
+  font-family: "courier-std", courier, monospace;
+  color: #A1A100;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0px 0;
+
+}
+
+span {
+  font-family: "courier-std", courier, monospace;
+    font-weight: bold;
+}
+
+b {
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+
+/* -------------------- post -------------------- */
+#postcontent {
+  /* --- future me please don't fuck with the margins here.
+  i don't understand WHY it has two be this way but
+  it's the only thing keeping the dividers from being uneven. 
+  please. PLEASE. --- */
+   margin-left: -3px;
+   width: 500px;
+   height: 0px;
+   text-align: left;  
+   animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+ 
+.post, .naviga {
+   padding: 0;
+   margin: 0;
+}
+
+.post img {
+   max-width: 100%;
+   height: auto;
+
+}
+
+
+/* -------------------- header -------------------- */
+
+#container {
+   display: inline-block;
+   top: 50px;
+   left: 10px;
+   position: fixed;
+}
+
+#third {
+   position: fixed;
+   top: 20px;
+   left: 190px;
+}
+
+#fart {
+   font-family: "courier-std", courier, monospace;
+   color: #A1A100;
+   font-size: 12px;
+   font-weight: bold;
+   overflow-y: auto;
+   text-align: left;
+   overflow-x: hidden;
+   max-height: 110px;
+   scrollbar-width: thin;
+}
+
+.header img {
+   position: relative; 
+   max-height: 100%;
+   max-width: 100%;
+}
+
+/* -------------------- etc -------------------- */
+.window-body {
+   overflow: auto;
+   background: #efefef;
+   padding: 10px;
+}
+
+.window-top {
+  
+  position: relative;
+  height: 20px;
+  width: 100% left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #E90013;
+  background-image: url("img/window-top.png"), url("img/red.png"), url("img/red-2.png");
+  background-repeat: no-repeat, repeat-x, repeat-x;
+  background-position: right, top, bottom;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.title-bar {
+  background: url('img/window-top.png') no-repeat 99%, #e90013;
+  min-height: 15px;
+  padding: 3px 2px 3px 3px;
+}
+
+.title-bar-text {
+   background: -webkit-linear-gradient(#ff0000, #0000ff);
+     -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+	 font-family: "courier";
+	 font-size: 14px;
+}
+
+#floatie {
+   bottom: 0px;
+   right: 0px;
+   position: fixed;
+   filter: drop-shadow(3px 3px 5px #FF0000) drop-shadow(2px 2px 2px #0000FF);
+}
+  
+#myVideo {
+  width: 50px;
+  height: 100px;
+    object-fit: cover;
+    z-index: -100;
+}
+
+#more {
+   display: none;
+   } 
+  
+  			/* DESKTOP ICONS */
+			.desktopIcon {
+				position: fixed;
+				bottom: 70px;
+				left: 20px;
+				height: 68px;
+				background: url("img/ATH.png") no-repeat center;
+				cursor: pointer;
+			}
+			.desktopIcon p {
+				user-select: none;
+				text-align: center;
+				font-family: "visitor", courier;
+				font-size: .9em;
+				background-color: black;
+				color: white;
+				padding: 3px;
+				margin-top: 75px;
+			}
+				
+.trollian {
+    background-color: #e2000c;
+				background: url("img/TROLLIAN.png") left no-repeat, url("img/bar.png") right no-repeat, url("img/height-red.png") repeat-x;
+				position: fixed;
+				top:0px;
+				width:100%;
+				left: 0px; right: 0px;
+				min-height: 91px;
+}
+
+.someHeader {
+    height: 130px;
+}
+
+.tab {
+  color: #515151;
+    word-spacing: 10px;
+  overflow: auto;
+  background-color: transparent;
+    
+}
+
+.tab button {
+  font-family: 'Fira Sans', sans-serif;
+  text-indent: 0px;
+    letter-spacing: 1px;
+  background-color: #b5b5b5;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.tab button:hover {
+  background-color: #8c8c8c;
+}
+
+.tab button.active {
+  background-color: #ffffff
+}
+
+/* --- you literally cannot make this shit up. margin left -3 px from #postcontent fucks up the #game one. why. --- */ 
+
+/* --- was an html divider issue. fixed it 5 minutes after typing this. lol. --- */ 
+
+#game, #ck {
+   display: none;
+   margin-left: -3px;
+   width: 500px;
+   height: 0px;
+   text-align: left;
+   animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+</style>
+
+ 
+ <div class="desktopIcon" style="top: 130px; left:111px;"><p>check_thii2_2hiit_out.~ATH</p></div>
+ 
+ <div class="desktopIcon" style="left:15px;"><p>unhackable.~ATH</p></div>
+ 
+ <div class="desktopIcon" style="left:150px;" onclick="showchat('beemovie');goOff();"><p>fuck_KK_up.~ATH</p></div>
+ 
+  <div class="desktopIcon" style="cursor: initial; width: 70px; height: 64px; left: 285px; bottom: 74px; background: url('img/JANUS.png') no-repeat center;" title="deniizen">
+        <p>JANUS</p></div>
+
+<div id="floatie" class="ui-draggable ui-draggable-handle">
+<img src="scribbles/husktop.png" width="400px">
+</div>
+
+
+<a href="https://solluxcaptor.neocities.org"><div class="trollian"></div></a>
+
+<div class="someHeader"></div>
+
+<center>
+
+<img src="scribbles/1.png">
+
+</center>
+
+
+<div id="third" class="ui-draggable ui-draggable-handle" style="left: 130px; top: 235px;">
+<div class="window" style="width: 250px">
+<div class="title-bar">
+<div class="title-bar-text"><img src="img/trollcool.gif" width=17px height=16px> twinArmageddons</div>
+
+</div>
+<div class="window-body"><div id="fart">
+ii2 that all you fecepo2tiing knuckle2ponge2 can 2ay? ii feel liike ii'm iin a fuckiing <hover title="a2ylum">looneyblock</hover> full of <hover title="dementiia">rapiidly decrea2iing cogniitiive lobe2tem functiion2</hover> fanniie2 that can 
+do nothiing but repeat the 2ame word2 on loop liike an <hover title="a broken record">ob2olete compact dii2k!</hover> oniion2? oniion2, 2NOYY. oniion2 <b>L O L</b> oniion2! 
+ii hate the iinternet 2o god damn much. hone2t two god hope your lu2u2 choke2 on iit2 own fece2 iin hell you <b>BULGE 2UCKER.</b></div></div>
+</div>
+</div>
+
+
+<center>
+
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, '2022')">2022</button>
+</div>
+
+
+<!-- /ck/ 2022 -->
+
+     <div id="ck" class="postcontent">
+     
+<br>
+
+
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent 4 files to siteReader [SR]</span></p>
+</center>
+<br>
+<img src="img/ck/ck1.png">
+<img src="img/ck/ck2.png">
+<img src="img/ck/ck3.png">
+<img src="img/ck/ck4.png">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+     </div>
+
+
+<!-- game 2022 -->
+
+
+     <div id="game" class="postcontent">
+ 
+  <br>
+
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a file to siteReader [SR]</span></p>
+<h4>alterniiabound replay log</h4>
+</center>
+<br>
+<img src="img/EB_1.png">
+<p>TA: a <hover title="bee">buzzbea2t</hover> iit iindeed ii2.</p>
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>  
+
+
+<br>
+
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a video to siteReader [SR]</span></p>
+<h4>full combo2 on hard diiffiiculty.</h4>
+</center>
+<br>
+<video width="457" height="auto" controls preload="true">
+   <source src="https://files.catbox.moe/42oa4w.mp4" type="video/mp4">
+</video>
+<video width="457" height="auto" controls preload="true">
+   <source src="https://files.catbox.moe/1r7w1l.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>  
+
+<br>
+
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a file to siteReader [SR]</span></p>
+</center>
+<br>
+<img src="img/verygoodstuff.png">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent 4 files to siteReader [SR]</span></p>
+</center>
+<br>
+<a href="https://imgur.com/1VWPHbC"><img src="img/blox.png"></a>
+<img src="img/blox2.png">
+<img src="img/blox4.png">
+<img src="img/blox5.png">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a video to siteReader [SR]</span></p>
+</center>
+<br>
+<video width="457" height="auto" controls preload="true">
+   <source src="https://files.catbox.moe/arenoq.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>  
+
+
+     </div>
+
+
+<!-- blog 2022  -->
+
+<div id="2022" class="postcontent">
+<br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'game')">game</button>
+  <button class="tablinks" onclick="openCity(event, 'ck')">/ck/</button>
+</div>
+<br>
+ <a href="https://homestuck.net/fanworks/homestuck-doujinshi/"><img src="img/2iick_fuck.png" width=450px style="margin-left: -3px;"></a>
+
+<!-- post -->
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<img src="scribbles/funko.png">
+<p>
+TA: よくない。away for a biit. 
+</p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>
+TA: made a 2iide .html <a href="https://solluxcaptor.neocities.org/per2on_2hiit.html">page</a> for my autii2m ramble2.
+<br>
+TA: 2erviing iit2 purpo2e.
+<br>
+TA: 2omethiing wiith mou2e on trollblox.
+<a href="https://youtu.be/btqdXGjtXn4"> <img src="scribbles/2omethiing2.png"> 
+</a>
+<img src="scribbles/AA.png">
+</p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: good new2, ii fiinally added new thiing2 two the web2iite. 
+<br>
+TA: mo2tly thii2 page.
+<br>
+TA: al2o tab2 that wont overlap wiith the maiin diiviider.
+<br>
+TA: here are 2ome comment2 from my 2ource code duriing the proce22.
+<br>
+<img src="/img/godknow2.png">
+<img src="/img/pa2t.png">
+</p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent 3 files to siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: fiinal tally of the month.</p>
+<img src="scribbles/9.png">
+<img src="scribbles/11.png">
+<img src="scribbles/12.jpg">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<img src="scribbles/no.png" title="procra2tiinatiion">
+<p>TA: troll todd howard, giive me the motiivatiion two do 2omethiing twoday.
+<br>
+TA: 2ome more game2.
+<br>
+TA: actually dont becau2e ii will end up biingiing elder 2croll2 game2 agaiin.
+<br>
+TA: can 2ome angry coder from valve2 headquarter2 tell me two do my work.
+<br>
+TA: or make me add 2omethiing NEW two thii2 2iite at lea2t.
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a file to siteReader [SR]</span></p>
+</center>
+<br>
+<img src="scribbles/5.png">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<iframe width="410" height="315" src="https://www.youtube.com/embed/WJRoRt155mA?controls=0" frameborder="0" loop="false" autoplay="false" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  title="kodomo no koro nat2uka2hiiii kiioku. kare toka no tokiinii giin no 2upun menii ate, urutoraman urutoraman 2ebun."></iframe>
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent 2 files to siteReader [SR]</span></p>
+</center>
+<br>
+<br>
+<img src="scribbles/epiic_face.png">
+<img src="scribbles/sollux_wazowski_sonic_karkat.png">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: 2ociial mediia account2 la2ted 2 month2.
+<br>
+TA: not really up2et about iit. ju2t 2omethiing that alway2 happen2 when ii try two 2ociialii2e out of my boundariie2.
+<br>
+TA: niicer two be on a non-metriic2 ba2ed 2iite.
+<br>
+TA: ok ii gue22 iit wa2 people actually liikiing my content that 2cared me.
+<br>
+TA: not anyone el2e2 fault, ii ju2t have a diiffiicult tiime wiith exii2tiing 2ociially.
+<br>
+TA: iit2 a lot more comfortable two exii2t iin a niiche corner of the iinternet 2omewhere.
+</p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a file to siteReader [SR]</span></p>
+</center>
+<br>
+<img src="scribbles/0.png">
+<br>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: made another header becau2e the previiou2 one had weiird anatomy.
+<br>
+TA: iit2 the one below the trolliian header. 
+<br>
+TA: al2o you can hover over 2ome foreiign word2 iif you thiink my <hover title="thii2 one mean2 nothiing. you're welcome.">kraft2auce</hover> ii2 iillegiible.
+<br>
+TA: 2criibbled my hu2ktop two the riight a2 well.
+<br>
+</p> 
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: got a couple of 2tuff done. 
+<br>
+TA: hopefully thii2 weekend ii can add more feature2 two the 2iite.
+<br>
+TA: 2omethiing cool liike a chat bar but no vii2iitor2 can type iin.
+<br>
+TA: that2 more 2o for the <hover title="gue2tbook">patrontome</hover>.
+<br>
+TA: ii al2o wouldnt be gettiing paiid two moniitor what you lunatiic2 could type iin.
+<br>
+TA: actually no how about a game but iit2 playable on a brow2er.
+<br>
+TA: liike a 2hort <hover title="vii2ual novel">ocular tome</hover> about goiing two the <hover title="conveniience 2tore">e22entiial repo2iitory</hover>.
+<br>
+TA: 2adly cant be made wiith adobe fla2h player becau2e fuck adobe but ii do have ren'py and RPG maker 2003 at my dii2po2al.
+<br>
+TA: RPGM2003 ha2 no riight two be 2o compliicated for a "2iimple" game makiing engiine though, holy 2hiit.
+<br>
+TA: and makiing your own a22et2 for everythiing get2 annoyiing. 2o ren'py iit ii2, probably.
+<br>
+TA: or maybe an iinteractiive .html on thii2 2iite where you can piick optiion2.
+<br>
+TA: 2ound2 more fea2iible.
+<br>
+</p> 
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: goiing two code my own <hover title="gue2tbook">patrontome</hover>. 
+<br>
+TA: u2iing a thiird party dude-2iite for iit ii2 pretty much equiivalent two begriimiing my optiical iin2trument2 two iinconveniience my2elf.
+<br>
+TA: IIF iit2 even remotely po22iible to 2et iit up wiithout a thiird party 2iite on <hover title="neociitiie2">geo2temclu2ter2</hover>.</p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">sent a file to siteReader [SR]</span></p>
+</center>
+<br>
+<p><img src="scribbles/comiic.png" title="億千万"></p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+</div>
+</div>
+</div>
+
+
+<!-- liiterally HOW doe2 iit make 2en2e two put the br property *after* the po2t content diiv, 
+thii2 took me hour2 two fiigure out and ii cannot for the liife of me under2tand why iit ha2 two be thii2 way. -->
+
+<!-- **EDIIT**
+holy 2hiit there'2 no way ii wa2 thii2 2tupiid. 
+pa2t me you're an iidiiot, iit'2 becau2e the background ii2 THE color of the po2t iit2elf. 
+po2t content ha2 NOTHIING two do wiith the background color. go fuck your2elf. -->
+
+<div id="postcontent">
+<br>
+<div class="background">
+<div class="window">
+<div class="title-bar"></div>
+<div class="background">
+<div class="window-body">
+<div class="post">
+
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">began trolling siteReader [SR]</span></p>
+</center>
+<br>
+<p>TA: been developiing AII chatbot2.
+<br>
+TA: help2 me communiicate wiith 3D people iin general.
+<br>
+TA: thii2 2iite ii2 niice becau2e there ii2 no actual 2ociial mediia algoriithm2.
+</p>
+<br>
+<center>
+<p><span style="color: #A1A100;">twinArmageddons [TA]</span>&nbsp;<span style="color: black;">ceased trolling siteReader [SR]</span></p>
+</center>
+<br>
+
+
+</div>
+</div>
+</div>
+<a href="https://youtu.be/mb2sX76tZwU" title="viiviid memory of 2eeiing thii2 on noii2enoii2edouga a2 a wiiggler.">君がくれた勇気は 億千万！ 億千万！</a> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- when ii wrote thii2, only god and ii knew what ii diid.
+now only god know2.-->
+
+<script>
+$( "#header" ).draggable();
+</script><script>
+$( "#second" ).draggable();
+</script><script>
+$( "#third" ).draggable();p
+</script><script>
+$( ".link1" ).draggable();
+</script><script>
+$( ".link2" ).draggable();
+</script><script>
+$( ".link3" ).draggable();
+</script><script>
+$( ".link4" ).draggable();
+</script><script> 
+$( "#floatie" ).draggable();
+</script>
+
+<script>
+function openCity(evt, cityName) {
+  var i, postcontent, tablinks;
+  postcontent = document.getElementsByClassName("postcontent");
+  for (i = 0; i < postcontent.length; i++) {
+    postcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</body> 
+</html>
