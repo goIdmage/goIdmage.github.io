@@ -1,3 +1,3 @@
-(hey.)[goidmage.github.io]
+(preview)[goidmage.github.io]
 
 fort a22hole.
