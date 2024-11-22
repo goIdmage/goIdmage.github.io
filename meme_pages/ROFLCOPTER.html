@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  right: 0;
+  min-width: 50%; 
+  min-height: 50%;
+}
+
+.content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+</style>
+</head>
+<body>
+<center>
+
+<video autoplay loop controls id="myVideo">
+  <source src="https://files.catbox.moe/3cjg1n.mp4" type="video/mp4">
+</video>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</center>
+</body>
+</html>
