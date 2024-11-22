@@ -1,0 +1,161 @@
+  body {
+
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+	font-size: 14px;
+	background-color: #d1d1d1;
+	cursor: url('https://i.imgur.com/JoboZxB.png'), auto;
+    
+  }
+  
+  hover {
+    color: #757500;
+    text-decoration: underline;
+}
+
+hover:hover {
+   font-style: italic;
+
+}
+
+a {
+   color: #0000ff;
+   font-size: 12px;
+   text-decoration: underline;
+}
+
+a:hover {
+   font-style: italic;
+
+}
+
+
+}
+  
+  /* non-people */
+    .pesterlog {
+	line-height: 2em;
+  font-family: "Courier New", Courier, monospace;
+	margin-bottom: 2em;
+	font-weight: bold;
+	font-size: 14px;
+	} 
+    .pesterlogstrict {
+  text-align: left;
+	line-height: 1.3em;
+	background: #eeeeee;
+  font-family: "Courier New", Courier, monospace;
+	border: dashed 1px #696969;
+	margin-bottom: 2em;
+	
+	font-weight: bold;
+	font-size: 14px;
+	width: 560px;
+	max-height: 550px;
+	
+	padding-left: 30px;
+	padding-right: 30px; 
+	
+	overflow: auto;
+	scrollbar-width: thin;
+	
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+	
+	}
+	
+    .label { 
+	color: #000;
+	padding-right: 10px; }
+		
+/* haemospectrum */
+    .handmaid, .aradia, .damara {
+        color: #a10000; }
+    .psiionic, .sollux, .mituna {
+	color: #a1a100; }
+ }
+ 
+ #floatie {
+   display: flex;
+   bottom: 0px;
+   right: 0px;
+   filter: drop-shadow(3px 3px 5px #FF0000) drop-shadow(2px 2px 2px #0000FF);
+}
+
+#third {
+   position: fixed;
+   top: 20px;
+   left: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+.container {
+  position: relative;
+  width: auto;
+  max-width: 500px;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #A1A100;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/** lightbox markup **/
+
+.lightbox {
+  display: none;
+
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  padding: 1em;
+
+  /* translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

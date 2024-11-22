@@ -1,0 +1,227 @@
+               :root {
+                --header-image: url('https://i.imgur.com/rkhs7Y9.png');
+                --body-bg-image: url('');
+                --content: #a1a100;
+            }
+
+
+            body {
+                font-family: "Comic Sans MS", "Comic Sans";
+                margin: 0;
+                background-color: #4d4d4d;
+                background-size: 65px;
+                color: #a1a100;
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+a {
+                text-decoration: none;
+                  display: inline-block;
+                vertical-align: middle;
+                -ms-webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -ms-webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -ms-webkit-transition-property: transform;
+                transition-property: transform;
+  
+}
+
+a:hover {
+  
+                  text-decoration: none;
+                -ms-webkit-transform: rotate(4deg);
+                transform: rotate(4deg);
+  
+}
+
+            #container {
+                max-width: 900px;
+                margin: 0 auto;
+
+            }
+
+            #container a {
+                color: #ED64F5;
+                font-weight: bold;
+
+            }
+
+            #header {
+                width: 100%;
+                height: 390px;
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+            
+            .headertxt {
+            position: relative;
+            top: 140px;
+            font-size: 78px;
+            text-shadow: 2px 2px 1px black;
+            
+                animation-name: floating;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                margin-left: 30px;
+                margin-top: 5px;
+                }
+ 
+                @keyframes floating {
+                0% { transform: translate(0,  0px); }
+                50%  { transform: translate(0, 15px); }
+                100%   { transform: translate(0, -0px); }   
+                }
+            
+
+
+            #navbar {
+                height: 60px;
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            #navbar li a {
+                background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
+                color: transparent;
+                font-weight: 800;
+                text-decoration: none;
+          
+                display: inline-block;
+                vertical-align: middle;
+                -ms-webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -ms-webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -ms-webkit-transition-property: transform;
+                transition-property: transform;
+  
+            }
+
+            #navbar li a:hover {
+
+                text-decoration: underline;
+                -ms-webkit-transform: rotate(4deg);
+                transform: rotate(4deg);
+
+
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            aside {
+                background-image: url("https://i.imgur.com/Pt8tRwE.png");
+                width: 182px;
+                padding: 20px;
+                font-size: smaller;
+                height: 503px;
+            }
+          
+
+
+            main {
+                text-align: center;
+                background-image: url("https://i.imgur.com/lBHa7v0.png");
+                flex: 1;
+                padding: 20px;
+                order: 2;
+                text-shadow: 1px 1px 1px black;
+                overflow-y: scroll;
+                height: 500px;
+            }
+
+            #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-image: url("https://i.imgur.com/n0yOObu.png");
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                text-shadow: 2px 2px 2px black;
+            }
+            
+            hr {
+             width: 50%;
+             color: black;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #a1a100;
+            }
+
+            h1 {
+                font-size: 78px;
+            }
+
+            strong {
+                color: #a1a100;
+            }
+
+            .box {
+                padding: 10px;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }

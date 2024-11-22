@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  
+<!-- if you're looking here, you might be looking to steal my code. 
+i at least have the satisfaction of knowing that i am a competent coder that doesn't need to stoop that low since i can back up my own skills, ehehehehe. -->
+  
+  
+ <style>
+body {
+  color: black;
+  background-color: #fff;
+  background-repeat: repeat;
+  line-height: normal;
+  font-size: 11px;
+
+
+font-family: monospace;
+}
+
+.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #ff0000;	}
+	50%{	color: #0000FF;	}
+	100%{		color: #ff0000;	}
+
+}
+  
+  .image {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    width: 50px;
+    height: 50px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.float-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-img{
+  top: 5%;
+  position: absolute;
+  width: 60%;
+  transform: translateY(-10%);
+  animation: floater 8s infinite;
+  transition: ease 0.5s;
+  
+}
+
+
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
+}
+
+
+  
+</style>
+
+
+
+<center>
+
+<!-- ah rah dee yuh -->
+
+<a href="https://youtu.be/c2D9B4qV4vg">
+  <div class="float-area">
+  <img src="https://i.ibb.co/d0MDMvK/moirails-for-gameboy.png" class="floating-img">
+  <br/>
+</div>
+</a>
+
+
+ </center>
+</body>
+</html> 
