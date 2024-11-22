@@ -302,7 +302,7 @@ hr {
 
 /* --- was an html divider issue. fixed it 5 minutes after typing this. lol. --- */ 
 
-#game, #ck, #blog2023, #game2023 {
+#game, #ck, #blog2023, #game2023, #blog2024 {
    display: none;
    width: 500px;
    height: 0px;
