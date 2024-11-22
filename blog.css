@@ -300,9 +300,9 @@ hr {
 
 /* --- you literally cannot make this shit up. margin left -3 px from #postcontent fucks up the #game one. why. --- */ 
 
-/* --- was an html divider issue. fixed it 5 minutes after typing this. lol. --- */ 
+/* --- was an html divider issue. fixed it 5 minutes after typing this. looool. --- */ 
 
-#game, #ck, #blog2023, #game2023, #blog2024 {
+#game, #ck, #blog2023, #game2023, #blog2024, #blog2025 {
    display: none;
    width: 500px;
    height: 0px;
