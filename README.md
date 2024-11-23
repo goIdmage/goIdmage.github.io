@@ -4,15 +4,11 @@
   <img height="300" src="https://i.imgur.com/acGQ6Ed.png"  />
 </div>
 
-###
+### <p align="center">my <a href="https://goidmage.github.io/">website</a>.</p>
 
-<br clear="both">
+<p align="center">20 y/o<br>i'm goldmage and i like to eat computers on a daily basis. if you're curious about the things i like to do, refer to the assortment of things below.</p>
 
-<p align="center">20 y/o<br><br>hey. typing here without the quirk so that it's easier on the eyes.<br>i'm goldmage and i like to eat computers on a daily basis. if you're curious about the things i like to do, refer to the assortment of things below.</p>
-
-###
-
-<br clear="both">
+<hr>
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
@@ -34,9 +30,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
 </div>
 
-###
-
-<br clear="both">
+<hr>
 
 <div align="center">
   <img src="https://profile-counter.glitch.me/goidmage/count.svg?"  />
