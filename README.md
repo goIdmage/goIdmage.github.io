@@ -5,11 +5,12 @@
 </div>
 
 # frequently asked questions
-<b><p>Q: did you use a template?</p></b>
-<p>A: no.</p>
 
 <b><p>Q: how long have you been coding?</p></b>
 <p>A: since i was 14 maybe.</p>
+
+<b><p>Q: did you use a template?</p></b>
+<p>A: no.</p>
 
 <b><p>Q: can i use your site as a template?</p></b>
 <p>A: no. if you need help just look up tutorials on <a href="https://stackoverflow.com/">stackoverflow</a> and <a href="https://www.w3schools.com/">w3schools</a>, it's not that difficult to learn.</p>
