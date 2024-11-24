@@ -1,39 +1,18 @@
 <br clear="both">
 
 <div align="center">
-  <img height="300" src="https://i.imgur.com/acGQ6Ed.png"  />
+  <img height="300" src="https://i.imgur.com/NSHkXll.png"  />
 </div>
 
-### <p align="center">my <a href="https://goidmage.github.io/">website</a>.</p>
+# frequently asked questions
+<b><p>Q: did you use a template?</p></b>
+<p>A: no.</p>
 
-<p align="center">20 y/o<br>i'm goldmage and i like to eat computers on a daily basis. if you're curious about the things i like to do, refer to the assortment of things below.</p>
+<b><p>Q: can i use your site as a template?</p></b>
+<p>A: no. if you need help just look up tutorials on stackoverflow and w3school, it's not that difficult to learn.</p>
 
-<hr>
+<b><p>Q: are these images your art?</p></b>
+<p>A: it varies page to page, but it is mine if you mean pages like aa and notfound.<br>i plan to make an illustrations page listing all my stuff when i get off my lazy ass.</p>
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="40" alt="blender logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-</div>
-
-<hr>
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/goidmage/count.svg?"  />
-</div>
-
-###
+<b><p>Q: are you a larper or kin or what.</p></b>
+<p>A: i don't know lol</p>
