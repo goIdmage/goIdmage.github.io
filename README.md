@@ -19,4 +19,4 @@
 <p>A: it varies page to page, but it is mine if you mean pages like aa and notfound.<br>i plan to make an illustrations page listing all my stuff when i get off my lazy ass.</p>
 
 <b><p>Q: are you a larper or kin or what.</p></b>
-<p>A: i don't know lol</p>
+<p>A: i don't know and i don't care enough to think about it.</p>
