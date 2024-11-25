@@ -15,8 +15,11 @@
 <b><p>Q: can i use your site as a template?</p></b>
 <p>A: no. <br> if you need help just look up tutorials on <a href="https://stackoverflow.com/">stackoverflow</a> and <a href="https://www.w3schools.com/">w3schools</a>.</p>
 
-<b><p>Q: are these images your art?</p></b>
-<p>A: it varies page to page, but it is mine if you mean pages like aa and notfound.<br>i plan to make an illustrations page listing all my stuff when i get off my lazy ass.</p>
+<b><p>Q: did you use a template?</p></b>
+<p>A: no.</p>
 
-<b><p>Q: are you a larper or kin or what.</p></b>
+<b><p>Q: when was this site made?</p></b>
+<p>A: since 2021. was originally hosted on neocities.</p>
+
+<b><p>Q: are you a larper or kin or what?</p></b>
 <p>A: i don't know and i don't care enough to think about it.</p>
