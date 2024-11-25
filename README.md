@@ -17,6 +17,3 @@
 
 <b><p>Q: when was this site made?</p></b>
 <p>A: since 2021. was originally hosted on neocities.</p>
-
-<b><p>Q: are you a larper or kin or what?</p></b>
-<p>A: i don't know and i don't care enough to think about it.</p>
