@@ -405,7 +405,6 @@ var btn = document.querySelector("button");
         // own
         
         'why do my friiend2 even liike me.',
-        'why would anyone liike me.',
         'iim goiing two fliip my apiiculture2 network wiire2 iif thii2 keep2 happeniing.',
         'you annoy me 2o quiickly iit2 remarkable.',
         'yet here ii am boiiliing wiith hate for you of all people.',
