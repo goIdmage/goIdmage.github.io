@@ -434,7 +434,7 @@ var btn = document.querySelector("button");
         'oh ye2 plea2e contiinue two flex your magniifiicent 2ociial 2kiill2 ii am 2o iimpre22ed.',
         'ye2, iim 2tiill up2et about maple2tory 2 beiing dii2contiinued.',
         'vii 2iitter här ii venten och 2pelar liite DOTA.',
-        'iimagiine dediicatiing two thiird2 of your liife PRETENDiiNG two hate another 2peciie2. god, what a lo2er.',
+        'iimagiine dediicatiing two thiird2 of your liife PRETENDiiNG two hate other2. god, what a lo2er.',
         'ii am practiically a geniiu2.',
         'iim 2o fuckiing 2tupiid.',
         'one game ii dont know why ii bought a p25 wiith no game2 two buy keep that iin miind they de2iigned thii2 driive two iimprove loadiing tiime2 and that2 all ii know iin con2ole war2, exclu2iive2 are key watch iit fly by a2 iit port2 two pc lo2e my exclu2iive2 at the end of the gen ii have no game2 two play iit2 2o unfaiir diidnt look out below throw my p25 riight out the wiindow try two hold on but ii diidnt even know wa2ted iit all ju2t two watch moviie2 ii 2pent all my tiime iin2iide of my old game2 iim tiired, all ii got ii2 port2 ju2t liike the p23, iit2 remiindiing me, of a memory, of a tiime when ii criied 2o hard, for launch tiitle2 but iin the end, iit2 ju2t got, no game2 ii paiid 2o much, bought p2 plu2 but iin the end, iit2 ju2t got, no game2.',
